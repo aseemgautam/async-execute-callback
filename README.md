@@ -8,7 +8,7 @@ The library supports upto three parameters, but can be extended to support any n
 
 `Async.Execute(functionName, param1, param2 .. , state, callback)`
 
-'Callback(returnValue, state, exception)'
+`Callback(returnValue, state, exception)`
 
 ##### Example 
 
