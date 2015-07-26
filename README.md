@@ -6,7 +6,7 @@ The library supports upto three parameters, but can be extended to support any n
 
 ## Syntax
 
-`Async.Execute(functionName, param1, param2 .. , state, callback)`
+`Async.Execute(functionName, param1, param2 .. , state, Callback)`
 
 `Callback(returnValue, state, exception)`
 
@@ -17,7 +17,7 @@ To execute a method `void Sum(int a, int b, int c) { return a + b + c; }` -
 `Async.Execute(Sum, 5, 6, 7, int[] {12, 14}, SumCallback)`
 
 ```
-void Callback(returnValue, state, exception) {
+void SumCallback(returnValue, state, exception) {
       //returnValue should be 17
       //state should be int[] {12, 14}
       //exception if there is any
